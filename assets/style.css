@@ -1,25 +1,25 @@
 :root{
 
-  /* font colors */
+  /* colors */
 
-  --PRIMARY-COLOR :#0065FE;
+  --MAIN-COLOR :#0065FE;
   --TEXT-COLOR : #141414;
-  --DARK-BLUE : #1E3448;
+  --D-BLUE : #1E3448;
   --NEUTRAL : #FFF;
-  --BG-COLOR-GRAY: #3284FF21;
+  --BG-GRAY: #3284FF21;
 
 
   /* font size */
 
-  --FS-100 : 12px;
-  --FS-200 : 14px;
-  --FS-300 : 16px;
-  --FS-400 : 18px;
-  --FS-500 : 20px;
-  --FS-600 : 24px;
-  --FS-700 : 32px;
-  --FS-800 : 40px;
-  --FS-900 : 48px;
+  --FT-100 : 12px;
+  --FT-200 : 14px;
+  --FT-300 : 16px;
+  --FT-400 : 18px;
+  --FT-500 : 20px;
+  --FT-600 : 24px;
+  --FT-700 : 32px;
+  --FT-800 : 40px;
+  --FT-900 : 48px;
 }
 
 
@@ -34,17 +34,17 @@
   font: inherit;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* Remove list styles on ul, ol elements with a list role */
 ul, ol, ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
 
 /* Set core root defaults */
-html:focus-within {
+/* html:focus-within {
   scroll-behavior: smooth;
 
-}
+} */
 
 html{
   display: table;
@@ -64,11 +64,12 @@ body {
   font-weight: lighter;
   display: table-cell;
   vertical-align: middle;
-  background-image: url("aurora.svg");
+  background-image: url("backgroundIm.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100vw;
 }
-
+ 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -151,7 +152,7 @@ select {
 }
 
 .top-menu-container a{
-  font-size: var(--FS-400);
+  font-size: var(--FT-400);
   font-weight: 100;
 }
 .sub-menu{
@@ -181,13 +182,13 @@ select {
 }
 
 .sub-menu li{
-  border-bottom: 1px solid var(--PRIMARY-COLOR);
+  border-bottom: 1px solid var(--MAIN-COLOR);
   font-size: 12px;
   padding: 20px;
 }
 
 .sub-menu li:hover{
-  background-color: var(--BG-COLOR-GRAY);
+  background-color: var(--BG-GRAY);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border: none;
 }
@@ -200,7 +201,7 @@ select {
 
 .top-menu-container .my-urls,
 .login-contianer .login{
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .top-menu-container .features{
@@ -216,14 +217,14 @@ select {
   justify-content: end;
   align-items: center;
   /* border: 1px solid black; */
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
 }
 
 button{
-  background-color: var(--PRIMARY-COLOR);
+  background-color: var(--MAIN-COLOR);
   border: none;
   color: var(--NEUTRAL);
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   cursor: pointer;
 }
 
@@ -234,8 +235,8 @@ button{
 
 .scissor a, .scissor-footer a{
   text-transform: uppercase;
-  font-size: var(--FS-600);
-  color: var(--PRIMARY-COLOR);
+  font-size: var(--FT-600);
+  color: var(--MAIN-COLOR);
   font-weight: 900;
 }
 
@@ -255,14 +256,14 @@ button{
 }
 
 .optimize h1{
-  font-size: var(--FS-900);
+  font-size: var(--FT-900);
   line-height: 96px;
   text-align: center;
   font-weight: 900;
 }
 
 .optimize span{
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .optimize-logo-container{
@@ -277,7 +278,7 @@ button{
   top: 400px;
   right: 329.5px;
   left: 329.5px; */
-  font-size: var(--FS-400);
+  font-size: var(--FT-400);
   line-height: 28px;
   text-align: center;
   max-width: 781px;
@@ -297,12 +298,12 @@ button{
 
 .signUp-learnMore-container button{
   padding: 16px 42.5px;
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   border-radius: 100px;
 }
 
 .signUp-learnMore-container a{
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .part-two{
@@ -315,7 +316,7 @@ button{
 .box-below-signUp{
   background: linear-gradient(90deg, #e2e9f0, rgba(255,255,255) 100%);
 
-  border: 0.5px solid var(--PRIMARY-COLOR);
+  border: 0.5px solid var(--MAIN-COLOR);
   border-radius: 24px;
   max-width: 768px;
   width: 100%;
@@ -329,7 +330,7 @@ button{
 }
 
 .box-below-signUp p{
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   line-height: 24px;
   text-align: center;
   margin-left: 60px;
@@ -389,7 +390,7 @@ button{
   max-width: 1446px;
 }
 .onestop{
-  font-size: var(--FS-800);
+  font-size: var(--FT-800);
   font-weight: bold;
   flex: 1 0 400px;
   line-height: 48px;
@@ -401,7 +402,7 @@ button{
 }
 
 .onestop span{
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .three-m,.sixty-m,
@@ -415,12 +416,12 @@ button{
 .one-b :first-child,
 .three-hundred-k :first-child{
   font-weight: 600;
-  font-size: var(--FS-700);
+  font-size: var(--FT-700);
   line-height: 40px;
 }
 
 .three-m:nth-child(2){
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   line-height: 24px;
 }
 
@@ -439,7 +440,7 @@ button{
 }
 
 .why-choose-container h2{
-  font-size: var(--FS-800);
+  font-size: var(--FT-800);
   font-weight: bold;
   line-height: 40px;
   margin-bottom: 24px;
@@ -449,7 +450,7 @@ button{
 }
 
 .why-choose-container span{
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .why-choose-container p{
@@ -468,7 +469,7 @@ button{
 .icon-cover{
   height: 56px;
   width: 56px;
-  background-color: var(--BG-COLOR-GRAY);
+  background-color: var(--BG-GRAY);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,13 +478,13 @@ button{
 }
 
 .main-icon-section-cover h3{
-  font-size: var(--FS-700);
+  font-size: var(--FT-700);
   line-height: 28px;
   margin-bottom: 20px;
 }
 
 .main-icon-section-cover  p{
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
 }
 
 .icon-section-cover{
@@ -504,7 +505,7 @@ button{
 }
 
 .line70-section h2{
-  font-size: var(--FS-800);
+  font-size: var(--FT-800);
   font-weight: 900;
   line-height: 32px;
   margin-bottom: 24px;
@@ -518,11 +519,11 @@ button{
 }
 
 .line70-section span{
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .line70-section p{
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   line-height: 24px;
   text-align: center;
 }
@@ -542,7 +543,7 @@ button{
 .basic-container, .team-container{
   width: 379px;
   height: 455px;
-  border: 0.4px solid var(--PRIMARY-COLOR);
+  border: 0.4px solid var(--MAIN-COLOR);
   border-radius: 12px;
   display: grid;
   justify-content: center;
@@ -554,7 +555,7 @@ button{
 .professional-container{
   width: 410px;
   height: 627px;
-  background-color: var(--DARK-BLUE);
+  background-color: var(--D-BLUE);
   color: var(--NEUTRAL);
   border-radius: 12px;
   border-style: none;
@@ -567,7 +568,7 @@ button{
 }
 
 .basic-container h2, .team-container h2{
-  font-size: var(--FS-800);
+  font-size: var(--FT-800);
   font-weight: 900;
 }
 
@@ -578,7 +579,7 @@ button{
 }
 
 .basic{
-  font-size: var(--FS-600);
+  font-size: var(--FT-600);
   font-weight: 500;
 }
 
@@ -599,18 +600,18 @@ button{
 
 button:hover{
   background-color: var(--NEUTRAL);
-  border: 1px solid var(--PRIMARY-COLOR);
-  color: var(--PRIMARY-COLOR);
+  border: 1px solid var(--MAIN-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .no-bg-color{
   background-color: var(--NEUTRAL);
-  border: 1px solid var(--PRIMARY-COLOR);
-  color: var(--PRIMARY-COLOR);
+  border: 1px solid var(--MAIN-COLOR);
+  color: var(--MAIN-COLOR);
 }
 
 .no-bg-color:hover{
-  background-color: var(--PRIMARY-COLOR);
+  background-color: var(--MAIN-COLOR);
   color: var(--NEUTRAL);
   border-style: none;
 }
@@ -618,7 +619,7 @@ button:hover{
 .form-container{
   width: 100%;
   height: 523px;
-  background-color: var(--DARK-BLUE);
+  background-color: var(--D-BLUE);
   margin-top: 500px;
   display: flex;
   justify-content: center;
@@ -643,21 +644,21 @@ form{
   height: 55px;
   border-radius: 12px;
   padding: 8px 12px 8px 12px;
-  border: 1px solid var(--PRIMARY-COLOR);
+  border: 1px solid var(--MAIN-COLOR);
 }
 .alias{
   width: 178px;
   height: 48px;
   border-radius: 12px;
   padding: 8px 12px 8px 12px;
-  border: 1px solid var(--PRIMARY-COLOR);
+  border: 1px solid var(--MAIN-COLOR);
 }
 #domain {
   width: 202px;
   height: 48px;
   border-radius: 12px;
   padding: 8px 20px 8px 20px;
-  border: 1px solid var(--PRIMARY-COLOR);
+  border: 1px solid var(--MAIN-COLOR);
 
 }
 .small-input{
@@ -676,7 +677,7 @@ form{
 .trim-url p{
   width: 373px;
   height: 40px;
-  color: var(--PRIMARY-COLOR);
+  color: var(--MAIN-COLOR);
   margin-top: 20px;
 
 }
@@ -685,7 +686,7 @@ form{
   height: 48px;
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  font-size: var(--FS-200);
+  font-size: var(--FT-200);
   font-weight: 400;
 }
 
@@ -745,7 +746,7 @@ form{
 .Revolutionizing{
   width: 1440px;
   height: 299px;
-  background-color: var(--DARK-BLUE);
+  background-color: var(--D-BLUE);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -755,14 +756,14 @@ form{
 }
 
 .Revolutionizing h2{
-  font-size: var(--FS-800);
+  font-size: var(--FT-800);
   font-weight: 900;
 }
 
 .Revolutionizing  button{
   padding: 12px 24px 12px 24px;
   border-radius: 100px;
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   margin-top: 30px ;
 }
 
@@ -806,7 +807,6 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .scissor-footer a{
@@ -861,7 +861,7 @@ section.part-six{
 }
 
 .accordion-content header .title{
-  font-size: var(--FS-500);
+  font-size: var(--FT-500);
   line-height: 32px;
   font-weight: 400 ;
 }
@@ -880,14 +880,14 @@ section.part-six{
 .accordion-content .description{
   height: 0;
   padding: 0 50px 0 15px;
-  font-size: var(--FS-300);
+  font-size: var(--FT-300);
   line-height: 32px;
   font-weight: 400;
   transition: all 0.2s linear;
 }
 
 .line70-section-accordion h3{
-  font-size: var(--FS-700);
+  font-size: var(--FT-700);
   font-weight: 900;
 }
 
